@@ -15,22 +15,13 @@ function setActive(name) {
   buttons.forEach((b) => b.classList.toggle('active', b.dataset.page === name));
 }
 
-// ローディング表示
-function showLoader(show) {
-  loader.hidden = !show;
-}
-
 // iframe切り替え
 function go(name, push = true) {
   const safe = PAGE_MAP[name] ? name : 'A';
   if (push) location.hash = safe;
   setActive(safe);
-  showLoader(true);
   frame.src = PAGE_MAP[safe];
 }
-
-// iframe読み込み完了時
-frame.addEventListener('load', () => showLoader(false));
 
 // クリックイベント
 buttons.forEach((btn) =>

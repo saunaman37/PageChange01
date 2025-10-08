@@ -2,14 +2,5 @@ html,
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-}
-.container {
-  padding: 20px;
-  background: #eef6ff;
-  height: 100vh;
-}
-#say {
-  padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #80a8ff;
+  background-color: pink;
 }
