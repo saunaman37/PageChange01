@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>AllOpe (iframe版・種別別フォルダ)</title>
+    <title>AllOpe</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
@@ -14,14 +14,7 @@
   </head>
   <body>
     <div class="layout">
-      <!-- 左50% -->
-
-      <aside class="left-pane">
-        <h1>左エリア</h1>
-        <p>この部分は固定。操作説明やメニューを置いてOK。</p>
-      </aside>
-
-      <!-- 右50% (iframe差し替え領域) -->
+      <!-- 左50% (iframe差し替え領域) -->
       <main class="right-pane">
         <iframe
           id="contentFrame"
@@ -31,6 +24,14 @@
           allow="fullscreen"
         ></iframe>
       </main>
+
+      <!-- 右50% -->
+      <aside class="left-pane">
+        <h1>左エリア</h1>
+        <p>この部分は固定。操作説明やメニューを置いてOK。</p>
+      </aside>
+
+      
     </div>
 
     <!-- 下部ボタン -->
