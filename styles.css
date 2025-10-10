@@ -51,7 +51,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
   padding: 8px;
-  background: #fff;
+  background: #131313;
   border-top: 1px solid #ddd;
 }
 
@@ -59,14 +59,14 @@ body {
   font-size: 16px;
   padding: 10px;
   border: 1px solid #ccc;
-  background: #f9fafb;
+  background: #747474;
   border-radius: 10px;
   cursor: pointer;
 }
 .tab-btn:hover {
-  background: gray;
+  background: #6a7f88;
 }
 .tab-btn.active {
-  background: yellow;
+  background: rgb(1, 175, 194);
   border-color: #80a8ff;
 }
