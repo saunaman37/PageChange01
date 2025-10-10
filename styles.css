@@ -24,6 +24,7 @@ body {
 
 
 .right-pane {
+  height: calc(100vh - var(--bar-h));
   background: green;
   border-right: 1px solid #e3e5e8;
 }
