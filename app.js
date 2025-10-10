@@ -1,5 +1,4 @@
 const frame = document.getElementById('contentFrame');
-const loader = document.getElementById('loader');
 const buttons = Array.from(document.querySelectorAll('.tab-btn'));
 
 // ページ名とHTMLパスのマッピング
@@ -16,26 +15,18 @@ function setActive(name) {
 }
 
 // iframe切り替え
-function go(name, push = true) {
+function changePages(name) {
   const safe = PAGE_MAP[name] ? name : 'A';
-  if (push) location.hash = safe;
   setActive(safe);
   frame.src = PAGE_MAP[safe];
 }
 
 // クリックイベント
 buttons.forEach((btn) =>
-  btn.addEventListener('click', () => go(btn.dataset.page))
+  btn.addEventListener('click', () => changePages(btn.dataset.page))
 );
-
-// ハッシュ変更対応
-window.addEventListener('hashchange', () => {
-  const name = (location.hash || '#A').slice(1);
-  go(name, false);
-});
 
 // 初期表示
 document.addEventListener('DOMContentLoaded', () => {
-  const initial = (location.hash || '#A').slice(1);
-  go(initial);
+  changePages('A');
 });
