@@ -41,18 +41,6 @@ body {
   border: 0;
 }
 
-.loading {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: #000;
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 8px;
-  opacity: 0.8;
-  font-size: 14px;
-}
-
 .bottom-bar {
   position: fixed;
   left: 0;
