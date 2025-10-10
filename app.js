@@ -21,7 +21,7 @@ function changePages(name) {
   frame.src = PAGE_MAP[nextPage];
 }
 
-// クリックイベント
+// 全ボタンにクリックイベント追加
 buttons.forEach((btn) =>
   btn.addEventListener('click', () => changePages(btn.dataset.page))
 );
