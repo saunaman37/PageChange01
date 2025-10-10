@@ -11,23 +11,23 @@ body {
 }
 
 :root {
-  --bar-h: 64px;
+  --bar-h: 80px;
 }
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* 画面左右1:1 */
   min-height: 100vh;
-  padding-bottom: var(--bar-h);
+  padding-bottom: var(--bar-h);/* ボタン領域との区別 */
   background-color: blue;
 }
 
 
-.left-pane {
+.right-pane {
   background: green;
   border-right: 1px solid #e3e5e8;
 }
-.right-pane {
+.left-pane {
   /* position: relative; */
   height: calc(100vh - var(--bar-h));
   padding: 0;
