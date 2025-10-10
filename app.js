@@ -9,16 +9,16 @@ const PAGE_MAP = {
   D: './pages/html/D.html',
 };
 
-// ボタン切り替え
+// 実行ボタン色変更
 function setActive(name) {
   buttons.forEach((b) => b.classList.toggle('active', b.dataset.page === name));
 }
 
-// iframe切り替え
+// 左ページの切替（ifame内）
 function changePages(name) {
-  const safe = PAGE_MAP[name] ? name : 'A';
-  setActive(safe);
-  frame.src = PAGE_MAP[safe];
+  const nextPage = PAGE_MAP[name] ? name : 'A';
+  setActive(nextPage);
+  frame.src = PAGE_MAP[nextPage];
 }
 
 // クリックイベント

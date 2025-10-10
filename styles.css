@@ -76,9 +76,9 @@ body {
   cursor: pointer;
 }
 .tab-btn:hover {
-  background: #f1f5f9;
+  background: gray;
 }
 .tab-btn.active {
-  background: #e6f0ff;
+  background: yellow;
   border-color: #80a8ff;
 }
